@@ -1,4 +1,4 @@
-# ZPL - Tree event module
+# ZPL - Event handler module
 [![npm version](https://badge.fury.io/js/zpl_event.c.svg)](https://badge.fury.io/js/zpl_event.c)
 
 Small event registration and callback management module. Handles simple event broadcasting using a small but yet simple to use API.
