@@ -3,6 +3,21 @@
 
 Small event registration and callback management module. Handles simple event broadcasting using a small but yet simple to use API.
 
+## Important note
+Event handler uses hash table to store array of callbacks per
+each valid event type.
+Each event callback receives an anonymous pointer
+which has to be casted to the proper base type.
+
+### Example
+- Initialize event pool.
+- Declare your event callbacks and any data layout
+  used by the events.
+- Add event callbacks to the pool. (Returns callback ID.)
+- Trigger arbitrary event in pool with specified dataset.
+- (Optional) Remove arbitrary event callback
+  by refering to it through event type and its callback ID.
+
 
 ## Usage
 
@@ -54,7 +69,7 @@ main(void) {
     zplev_remove(&events, test_e1_ev, 1);
     zpl_printf("After deletion of ID 1\n");
 
-    // NOTE(ZaKlaus): Prints 0,2
+NOTE(ZaKlaus): Prints 0,2
     zplev_trigger(&events, test_e1_ev, &cb_data);
 
     zplev_destroy(&events);
