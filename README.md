@@ -1,21 +1,23 @@
 # ZPL - Event handler module
 [![npm version](https://badge.fury.io/js/zpl_event.c.svg)](https://badge.fury.io/js/zpl_event.c)
 
-Small event registration and callback management module. Handles simple event broadcasting using a small but yet simple to use API.
+Small event registration and callback management module. 
+Handles simple event broadcasting using a small but yet simple to use API.
 
 ## Important note
 Event handler uses hash table to store array of callbacks per
 each valid event type.
+
 Each event callback receives an anonymous pointer
 which has to be casted to the proper base type.
 
 ### Example
-- Initialize event pool.
-- Declare your event callbacks and any data layout
+1. Initialize event pool.
+2. Declare your event callbacks and any data layout
   used by the events.
-- Add event callbacks to the pool. (Returns callback ID.)
-- Trigger arbitrary event in pool with specified dataset.
-- (Optional) Remove arbitrary event callback
+3. Add event callbacks to the pool. (Returns callback ID.)
+4. Trigger arbitrary event in pool with specified dataset.
+5. (Optional) Remove arbitrary event callback
   by refering to it through event type and its callback ID.
 
 
