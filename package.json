@@ -1,6 +1,6 @@
 {
   "name": "zpl_event.c",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Event handler library.",
   "main": "include/zpl_event.h",
   "directories": {
