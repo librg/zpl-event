@@ -71,7 +71,7 @@ main(void) {
     zplev_remove(&events, test_e1_ev, 1);
     zpl_printf("After deletion of ID 1\n");
 
-NOTE(ZaKlaus): Prints 0,2
+// NOTE(ZaKlaus): Prints 0,2
     zplev_trigger(&events, test_e1_ev, &cb_data);
 
     zplev_destroy(&events);
