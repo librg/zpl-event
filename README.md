@@ -1,3 +1,5 @@
+# MIGRATED TO [zpl](https://github.com/zpl-c/zpl)
+
 # ZPL - Event handler module
 [![npm version](https://badge.fury.io/js/zpl_event.c.svg)](https://badge.fury.io/js/zpl_event.c)
 
